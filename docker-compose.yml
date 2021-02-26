@@ -1,0 +1,29 @@
+version: "3.4"
+services:
+  nginx:
+    build: images/nginx
+    volumes:
+      - "./src/api:/app:cached"
+    ports:
+      - "80:80"
+    depends_on:
+      - client
+      - api
+  client:
+    build: src/client
+    volumes:
+      - "./src/client:/app"
+    depends_on:
+      - api
+  api:
+    build: src/api
+    volumes:
+      - "./src/api:/app"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: "mongo:latest"
+    volumes:
+      - "./data/mongodb:/data/db"
+    ports:
+      - "27017:27017"

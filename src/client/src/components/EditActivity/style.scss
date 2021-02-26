@@ -1,0 +1,72 @@
+.edit-activity {
+    background: #6c757d;
+    min-height: 976px;
+
+    &-label {
+        padding-top: 30px;
+        font-family: 'Raleway-Bold';
+        font-size: 18px;
+        color: #fff;
+    }
+    &-name {
+        padding-bottom: 15px;
+        color: rgb(34, 34, 34);
+
+        &-btn {
+            font-family: 'Raleway-Regular';
+            background-color: rgb(86, 156, 121);
+            border-color: #fff;
+            &:hover {
+                background-color: rgb(86, 156, 121);
+                border-color: #fff;
+            }
+            &:focus {
+                background-color: rgb(86, 156, 121);
+                border-color: #fff;
+            }
+        }
+    }
+}
+
+.add-new-date-btn {
+    font-family: 'Raleway-Regular';
+    font-size: 14px;
+    &:focus {
+        border: none;
+    }
+}
+
+.save-all-btn {
+    font-size: 14px;
+    float: right;
+    font-family: 'Raleway-Regular';
+    background-color: rgb(86, 156, 121);
+    border: none;
+    &:hover {
+        background-color: rgb(86, 156, 121);
+        border: none;
+    }
+    &:focus {
+        background-color: rgb(86, 156, 121);
+        border: none;
+    }
+}
+
+.buttons-end {
+    margin-top: 15px;
+}
+
+.delete-activity-btn {
+    font-size: 14px;
+    font-family: 'Raleway-Regular';
+    background-color: rgb(189, 50, 50);
+    border: none;
+    &:hover {
+        background-color: rgb(189, 50, 50);
+    }
+    &:focus {
+        background-color: rgb(189, 50, 50);
+        border: none;
+    }
+}
+

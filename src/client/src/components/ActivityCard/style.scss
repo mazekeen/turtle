@@ -1,0 +1,30 @@
+.activity-card {
+    display: flex;
+    flex-direction: row;
+    &-text {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 100px;
+        align-items: center;
+    }
+    &-button {
+        display: flex;
+        align-content: flex-end;
+        margin-right: 0;
+        border: none;
+        border-radius: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+        align-items: center;
+    }
+    &:hover {
+        cursor: pointer;
+        .activity-card-button {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            width: 60px;
+        }
+    }
+}

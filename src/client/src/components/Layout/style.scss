@@ -1,0 +1,19 @@
+.layout {
+    &-navigation {
+        position: fixed;
+    }
+    &-menu {
+        position: fixed;
+        height: calc(100vh - 56px);
+        width: 300px;
+        margin-top: 56px;
+    }
+    &-content {
+        position: fixed;
+        height: calc(100vh - 76px);
+        width: calc(100vw - 320px);
+        margin-left: 320px;
+        margin-top: 76px;
+        overflow-y: auto;
+    }
+}
