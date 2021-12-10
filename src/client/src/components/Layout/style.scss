@@ -1,19 +1,36 @@
 .layout {
+    display: flex;
     &-navigation {
         position: fixed;
     }
     &-menu {
-        position: fixed;
+        display: flex;
         height: calc(100vh - 56px);
-        width: 300px;
+        width: 280px;
         margin-top: 56px;
     }
     &-content {
-        position: fixed;
         height: calc(100vh - 76px);
-        width: calc(100vw - 320px);
-        margin-left: 320px;
+        width: calc(100vw - 300px);
         margin-top: 76px;
+        margin-left: 20px;
+        margin-right: 20px;
         overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .layout {
+        display:flex;
+        flex-direction: column;
+        &-menu {
+            height: 300px;
+            width: 100%;
+            margin-top: 56px;
+        }
+        &-content {
+            width: 90%;
+            margin-top: 30px;
+        }
     }
 }

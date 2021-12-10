@@ -1,8 +1,8 @@
-.menu {
-    background-color:#bbc0c4;
+.list {
+    height: auto;
+    background-color:#d7e7d9;
     padding-right: 15px;
     padding-left: 15px;
-    display: flex;
     font-family: 'Raleway-Regular';
 
     &-group {
@@ -25,33 +25,28 @@
         background-color: #fff;
         border: 1px solid rgba(0,0,0,.125);
         border-top-width: 0;
-        display: inline-block;
         cursor: pointer;
-        /*transition: all 0.01s;
 
-        &:hover {
-            transform: scale(1.1);
-            z-index: 100;
-        }*/
-
-        &:hover .menu-item-edit-btn{
-            display: inline-block;
+        &:hover .list-item-edit-btn{
+            display: flex;
+            align-self: flex-end;
         }
 
         &-name {
-            display: inline-block;
+            display: flex;
+            align-self: flex-start;
             font-size: 14px;
+            color: #565656;
         }
 
         &-edit-btn {
             display: none;
             font-size: 12px;
             position: absolute;
-            padding-left: 220px;
+            right: 12px;
             padding-top: 11px;
             padding-bottom: 11px;
             z-index : 1;
-            right: 18px;
             top: 50%;
             float: right;
             transform: translateY(-50%);
@@ -100,39 +95,21 @@
     }
 
 }
-.modal-cancel-btn {
-    border: none;
-    border-radius: 2px;;
-    font-family: 'Raleway-Regular';
-    color: #fff;
-    background-color:#6c757d;
-    &:focus {
-            outline: none;
-        }
 
-}
-
-.modal-save-btn {
-    border: none;
-    border-radius: 2px;;
-    font-family: 'Raleway-Regular';
-    color: #fff;
-    background-color:#6c757d;
-    &:focus {
-            outline: none;
-        }
-}
-
-.create-activity-name {
-    font-family: 'Raleway-Regular';
-}
-
-.Link {
-    color:none;
-    &:hover {
-        color: none;
-        text-decoration: none;
+@media screen and (max-width: 1024px) {
+    .list-group {
+        position: relative;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        width: 100%;
     }
 }
+
 
 

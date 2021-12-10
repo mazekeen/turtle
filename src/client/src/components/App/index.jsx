@@ -4,11 +4,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faPencilAlt, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-import LoginPage from '../LoginPage';
-import RegisterPage from '../RegisterPage';
-import ActivitiesMenu from '../ActivitiesMenu';
-import Layout from '../Layout';
-import EditActivity from '../EditActivity';
+import LoginPage from '../../pages/LoginPage';
+import RegisterPage from '../../pages/RegisterPage';
+import HomePage from '../../pages/HomePage';
 
 library.add(fab, faPlus);
 library.add(fab, faTrash);
@@ -26,15 +24,8 @@ function App() {
             </Route>
 
             <Route path="/" exact>
-                <Layout>
-                    <ActivitiesMenu />
-                </Layout>
+                <HomePage />
             </Route>
-
-            <Route path="/edit">
-                <EditActivity />
-            </Route>
-
         </Router>
     );
 }
